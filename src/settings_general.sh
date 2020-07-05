@@ -91,7 +91,7 @@ vaapi_device='/dev/dri/renderD128' # DRM render node (vaapi device) (for vaapi v
 display=':0.0'                     # display (and screen) number(s) ($DISPLAY environment variable)
 border='2'                         # tickness of the screen region border delimiter (0 to disable border)
 border_options="-show_region 1 -region_border ${border}"
-video_input_options="-f x11grab -thread_queue_size ${queue_size} -probesize 20M"
+video_input_options="-f x11grab -draw_mouse 0 -thread_queue_size ${queue_size} -probesize 20M"
 
 # metadata settings
 metadata="comment=$(printf '%s\n%s' "Created with screencast ${screencast_version}" "${screencast_website}")"
