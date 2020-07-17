@@ -72,7 +72,7 @@ lossless_videocodec_settings_ffv1() {
     if check_component ffv1 encoder &&
        check_component ffv1 decoder
     then
-        video_record_codec='libx264rgb -crf 0 -preset ultrafast -threads 2'
+        video_record_codec='libx264 -crf 0 -preset ultrafast -threads 2'
     else
         return 1
     fi
