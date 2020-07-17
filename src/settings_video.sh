@@ -113,9 +113,9 @@ videocodec_settings_x264() {
     else
         if [ "$one_step" = 'true' ] 
         then
-            video_encode_codec='libx264 -crf 21 -preset ultrafast'
+            video_encode_codec='libx264 -crf 23 -preset ultrafast'
         else
-            video_encode_codec='libx264 -crf 21 -preset ultrafast'
+            video_encode_codec='libx264 -crf 23 -preset ultrafast'
         fi
     fi
 }
