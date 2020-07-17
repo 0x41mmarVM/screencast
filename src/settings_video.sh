@@ -115,7 +115,7 @@ videocodec_settings_x264() {
         then
             video_encode_codec='libx264 -crf 21 -preset ultrafast'
         else
-            video_encode_codec='libx264 -crf 21 -preset faster'
+            video_encode_codec='libx264 -crf 21 -preset ultrafast'
         fi
     fi
 }
