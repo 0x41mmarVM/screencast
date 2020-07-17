@@ -28,7 +28,7 @@ screencast_website='https://github.com/dbermond/screencast/'
 
 # system related settings
 savedir="$(pwd)"             # path to save output files
-queue_size='3096'            # ffmpeg thread queue size
+queue_size='1024'            # ffmpeg thread queue size
 ffplay_volume='35'           # ffplay playback volume (0-100)
 finish_sound='/usr/share/sounds/freedesktop/stereo/complete.oga'
 finish_icon='/usr/share/icons/oxygen/base/128x128/actions/dialog-ok-apply.png'
@@ -94,7 +94,7 @@ border_options="-show_region 1 -region_border ${border}"
 video_input_options="-f x11grab -draw_mouse 0 -thread_queue_size ${queue_size} -probesize 20M"
 
 # metadata settings
-metadata="comment=$(printf '%s\n%s' "Created with screencast ${screencast_version}" "${screencast_website}")"
+metadata="comment=$(printf '%s\n%s' "Screencast ${screencast_version}" "${screencast_website}")"
 
 # default options for later comparison (to print informative messages)
 audio_encoder_default="$audio_encoder"
